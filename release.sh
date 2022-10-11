@@ -94,13 +94,6 @@ else
 fi
 fi
 
-# prepare extra files
-if [ ! -z "${INPUT_EXTRA_FILES}" ]; then
-  cd ${GITHUB_WORKSPACE}
-  cp -r ${INPUT_EXTRA_FILES} ${INPUT_PROJECT_PATH}/${BUILD_ARTIFACTS_FOLDER}/
-  cd ${INPUT_PROJECT_PATH}
-fi
-
 cd ${BUILD_ARTIFACTS_FOLDER}
 ls -lha
 
